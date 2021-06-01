@@ -15,19 +15,19 @@ import numpy as np
 video_capture = cv2.VideoCapture(0)
 
 # Load a sample picture and learn how to recognize it.
-luke_image = face_recognition.load_image_file("data_copy/Luke/210529135822.jpg")
+luke_image = face_recognition.load_image_file("data_uncut/Luke/210529135822.jpg")
 luke_face_encoding = face_recognition.face_encodings(luke_image)[0]
 
 # Load a second sample picture and learn how to recognize it.
-tan_image = face_recognition.load_image_file("data_copy/tan/210529113657.jpg")
+tan_image = face_recognition.load_image_file("data_uncut/tan/210529113657.jpg")
 tan_face_encoding = face_recognition.face_encodings(tan_image)[0]
 
 # Load a 3rd sample picture and learn how to recognize it.
-steph_image = face_recognition.load_image_file("data_copy/Steph/210529150347.jpg")
+steph_image = face_recognition.load_image_file("data_uncut/Steph/210529150347.jpg")
 steph_face_encoding = face_recognition.face_encodings(steph_image)[0]
 
 # Load a 4th sample picture and learn how to recognize it.
-uyen_image = face_recognition.load_image_file("data_copy/Uyen/10.jpg")
+uyen_image = face_recognition.load_image_file("data_uncut/Uyen/10.jpg")
 print(uyen_image.shape)
 print(uyen_image.__class__)
 uyen_face_encoding = face_recognition.face_encodings(uyen_image)[0]
